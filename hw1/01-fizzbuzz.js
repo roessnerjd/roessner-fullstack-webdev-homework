@@ -1,3 +1,8 @@
+// Name: Jacob Roessner
+// Date: 10/08/26
+// Class: CS465
+// HW: Exercise 01
+
 /** Exercise 01 - Fizzbuzz
 
 Problem: 
@@ -26,3 +31,23 @@ Input: n = 15
 Output: ["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13","14","FizzBuzz"]
 
 **/
+
+const fizzbuzz = function evaluate_nums(n) {
+  let answer = []; // needs to return string array answer
+
+  for (let i = 1; i <= n; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      answer.push("FizzBuzz");
+    } else if (i % 5 === 0) {
+      answer.push("buzz");
+    } else if (i % 3 === 0) {
+      answer.push("fizz");
+    } else {
+      answer.push(String(i)); // i -> string to follow requirements
+    }
+  }
+
+  return answer;
+};
+
+console.log(fizzbuzz(100)); // display iterations upto 100
