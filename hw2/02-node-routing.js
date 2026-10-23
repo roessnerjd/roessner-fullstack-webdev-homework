@@ -40,7 +40,7 @@ const server = http.createServer((req, res) => {
   // welcome page w/ message
   if (req.url === "/welcome") {
     res.writeHead(200, { "Content-Type": "text/html" });
-    res.end("<h1>Welcome to my website!</h1>");
+    res.end("<h1>Welcome to my 2nd webpage, much more work to be done.</h1>");
 
     // redirect user to different page
   } else if (req.url === "/redirect") {
@@ -50,7 +50,7 @@ const server = http.createServer((req, res) => {
     // redirected page w/ message
   } else if (req.url === "/redirected") {
     res.writeHead(200, { "Content-Type": "text/html" });
-    res.end("<h1>You have been redirected!</h1>");
+    res.end("<h1>Welcome to the redirected page @_@</h1>");
 
     // cache page
   } else if (req.url === "/cache") {
