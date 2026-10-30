@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+nav a {
+  margin-right: 10px;
+}
+
+/* Display characters in a grid */
+.characters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.character {
+  border: 1px solid gray;
+  padding: 10px;
+  width: 200px;
+}
+
+.character img {
+  width: 100%;
+}
